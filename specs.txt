@@ -1,0 +1,29 @@
+Specs:
+
+Test 1-
+  Input a one-letter word & a string containing that word one time.
+  Output should find that word once.
+    ex: input1 = 'a'
+        input2 = 'a dog'
+        output = 1 match
+
+Test 2-
+  Input a one-letter word & a string containing that word twice.
+  Output should find that word twice.
+    ex: input1 = 'a'
+        input2 = 'a cat and a dog'
+        output = 2 matches
+
+Test 3-
+  Input a two-letter word & a string containing that word one time.
+  Output should find that word once.
+    ex: input1 = 'to'
+        input2 = 'to infinity and beyond'
+        output = 1 match
+
+Test 4-
+  Input a word & a string containing that word and a word that contains that word.
+  Output should find the word once.
+    ex: input1 = 'cat'
+        input2 = 'the cat was my favorite part of catdog'
+        output = 1 match
