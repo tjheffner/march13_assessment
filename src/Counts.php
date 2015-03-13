@@ -5,7 +5,8 @@
     function countRepeats($input1, $input2)
     {
         $counter = 0;
-        $sentence = explode(" ", $input2);
+        $input2lc = strtolower($input2);
+        $sentence = explode(" ", $input2lc);
 
         $word_count = array_count_values($sentence);
 
