@@ -20,6 +20,7 @@ Test 3-
     ex: input1 = 'cat'
         input2 = 'the cat was my favorite part of catdog'
         output = 1 match
+        
 Test 4-
   Input a word & a string containing that word with a different case.
   Output should still find the word once.
