@@ -65,6 +65,21 @@
 
     }
 
+    function test_countRepeats_caseProof()
+    {
+      //Arrange
+      $test_Counts = new RepeatCounter;
+      $input1 = 'cat';
+      $input2 = 'The Cat in the Hat';
+
+      //Act
+      $result = $test_Counts->countRepeats($input1, $input2);
+
+      //Assert
+      $this->assertEquals(1, $result);
+
+    }
+
   }
 
  ?>
