@@ -20,10 +20,17 @@ Test 3-
     ex: input1 = 'cat'
         input2 = 'the cat was my favorite part of catdog'
         output = 1 match
-        
+
 Test 4-
   Input a word & a string containing that word with a different case.
   Output should still find the word once.
     ex: input1 = 'cat'
         input2 = 'The Cat in the Hat'
+        output = 1 match
+
+Test 5-
+  Input a word & a string containing that word next to punctuation.
+  Output should find the word.
+    ex: input1 = 'cat'
+        input2 = 'that guy is a cool cat.'
         output = 1 match
