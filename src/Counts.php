@@ -5,6 +5,7 @@
     function countRepeats($input1, $input2)
     {
         $counter = 0;
+        $input2 = trim(preg_replace( "/[^0-9a-z]+/i", " ", $input2 ));
         $input2lc = strtolower($input2);
         $sentence = explode(" ", $input2lc);
 
