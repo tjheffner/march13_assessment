@@ -35,21 +35,35 @@
 
     }
 
+    function test_countRepeats_twoletter()
+    {
+      //Arrange
+      $test_Counts = new RepeatCounter;
+      $input1 = 'to';
+      $input2 = 'to infinity and beyond';
 
-        function test_countRepeats_twoletter()
-        {
-          //Arrange
-          $test_Counts = new RepeatCounter;
-          $input1 = 'to';
-          $input2 = 'to infinity and beyond';
+      //Act
+      $result = $test_Counts->countRepeats($input1, $input2);
 
-          //Act
-          $result = $test_Counts->countRepeats($input1, $input2);
+      //Assert
+      $this->assertEquals(1, $result);
 
-          //Assert
-          $this->assertEquals(1, $result);
+    }
 
-        }
+    function test_countRepeats_compoundWord()
+    {
+      //Arrange
+      $test_Counts = new RepeatCounter;
+      $input1 = 'cat';
+      $input2 = 'the cat was my favorite part of catdog';
+
+      //Act
+      $result = $test_Counts->countRepeats($input1, $input2);
+
+      //Assert
+      $this->assertEquals(1, $result);
+
+    }
 
   }
 
