@@ -20,6 +20,21 @@
 
     }
 
+    function test_countRepeats_onelettertwice()
+    {
+      //Arrange
+      $test_Counts = new RepeatCounter;
+      $input1 = 'a';
+      $input2 = 'a cat and a dog';
+
+      //Act
+      $result = $test_Counts->countRepeats($input1, $input2);
+
+      //Assert
+      $this->assertEquals(2, $result);
+
+    }
+
   }
 
  ?>
