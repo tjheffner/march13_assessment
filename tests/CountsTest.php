@@ -35,6 +35,22 @@
 
     }
 
+
+        function test_countRepeats_twoletter()
+        {
+          //Arrange
+          $test_Counts = new RepeatCounter;
+          $input1 = 'to';
+          $input2 = 'to infinity and beyond';
+
+          //Act
+          $result = $test_Counts->countRepeats($input1, $input2);
+
+          //Assert
+          $this->assertEquals(1, $result);
+
+        }
+
   }
 
  ?>

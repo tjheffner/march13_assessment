@@ -9,8 +9,6 @@
 
         $word_count = array_count_values($sentence);
 
-        var_dump($word_count);
-
           if (in_array($input1, $sentence)) {
             $counter = $word_count[$input1];
           }
