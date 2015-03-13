@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
     <title>Sentence Checked</title>
   </head>
   <body>
-    <p>Your word was found {{ matches }} times in that sentence.</p>
+    <div class="text-center">
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <h4>Your word was found {{ matches }} times in that sentence.</h4>
 
-    <a href="/"><button name="button" >Check again.</button></a>
+        <a href="/"><button class="btn btn-info" name="button" >Check again.</button></a>
+      </div>
+    </div>
   </body>
 </html>
