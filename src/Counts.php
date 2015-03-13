@@ -7,9 +7,13 @@
         $counter = 0;
         $sentence = explode(" ", $input2);
 
-        if (in_array($input1, $sentence)) {
-          $counter++;
-        }
+        $word_count = array_count_values($sentence);
+
+        var_dump($word_count);
+
+          if (in_array($input1, $sentence)) {
+            $counter = $word_count[$input1];
+          }
 
         return $counter;
     }
