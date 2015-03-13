@@ -15,15 +15,14 @@ Test 2-
         output = 2 matches
 
 Test 3-
-  Input a two-letter word & a string containing that word one time.
-  Output should find that word once.
-    ex: input1 = 'to'
-        input2 = 'to infinity and beyond'
-        output = 1 match
-
-Test 4-
   Input a word & a string containing that word and a word that contains that word.
   Output should find the word once.
     ex: input1 = 'cat'
         input2 = 'the cat was my favorite part of catdog'
+        output = 1 match
+Test 4-
+  Input a word & a string containing that word with a different case.
+  Output should still find the word once.
+    ex: input1 = 'cat'
+        input2 = 'The Cat in the Hat'
         output = 1 match
